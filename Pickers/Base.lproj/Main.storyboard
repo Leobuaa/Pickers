@@ -99,6 +99,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="6mQ-to-iPD"/>
                     <connections>
+                        <outlet property="button" destination="yQF-0V-dnn" id="QqL-GQ-5jc"/>
                         <outlet property="picker" destination="KZt-k0-0wS" id="iP1-jE-H6U"/>
                         <outlet property="winLabel" destination="5eW-K0-aeH" id="9w0-ID-uXk"/>
                     </connections>

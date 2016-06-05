@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B34A51A91D0436D500088C6D /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34A51A71D0436D500088C6D /* crunch.wav */; };
+		B34A51AA1D0436D500088C6D /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34A51A81D0436D500088C6D /* win.wav */; };
 		B37C2F191D016B2C009D4E78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C2F181D016B2C009D4E78 /* main.m */; };
 		B37C2F1C1D016B2C009D4E78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C2F1B1D016B2C009D4E78 /* AppDelegate.m */; };
 		B37C2F1F1D016B2C009D4E78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C2F1E1D016B2C009D4E78 /* ViewController.m */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B34A51A71D0436D500088C6D /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		B34A51A81D0436D500088C6D /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		B37C2F141D016B2C009D4E78 /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37C2F181D016B2C009D4E78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B37C2F1A1D016B2C009D4E78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				B37C2F251D016B2C009D4E78 /* LaunchScreen.storyboard */,
 				B37C2F281D016B2C009D4E78 /* Info.plist */,
 				B397999C1D03CFBA0018D794 /* statedictionary.plist */,
+				B34A51A71D0436D500088C6D /* crunch.wav */,
+				B34A51A81D0436D500088C6D /* win.wav */,
 				B37C2F171D016B2C009D4E78 /* Supporting Files */,
 			);
 			path = Pickers;
@@ -274,8 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34A51A91D0436D500088C6D /* crunch.wav in Resources */,
 				B37C2F271D016B2C009D4E78 /* LaunchScreen.storyboard in Resources */,
 				B37C2F241D016B2C009D4E78 /* Assets.xcassets in Resources */,
+				B34A51AA1D0436D500088C6D /* win.wav in Resources */,
 				B397999D1D03CFBA0018D794 /* statedictionary.plist in Resources */,
 				B37C2F221D016B2C009D4E78 /* Main.storyboard in Resources */,
 			);
