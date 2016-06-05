@@ -80,9 +80,34 @@
                     <view key="view" contentMode="scaleToFill" id="yhp-vE-MYn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ev-gM-Pbu">
+                                <rect key="frame" x="140" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ATq-sU-OHy" id="yuJ-Jg-OM1"/>
+                                    <outlet property="delegate" destination="ATq-sU-OHy" id="E6t-Ut-olA"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-9P-e1w">
+                                <rect key="frame" x="278" y="253" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="ATq-sU-OHy" eventType="touchUpInside" id="ckK-vU-ZGn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QMI-9P-e1w" firstAttribute="top" secondItem="0ev-gM-Pbu" secondAttribute="bottom" constant="37" id="Fo8-zW-mpK"/>
+                            <constraint firstItem="0ev-gM-Pbu" firstAttribute="top" secondItem="yhp-vE-MYn" secondAttribute="topMargin" id="dqD-oZ-2Ac"/>
+                            <constraint firstItem="QMI-9P-e1w" firstAttribute="centerX" secondItem="yhp-vE-MYn" secondAttribute="centerX" id="udz-fR-9bc"/>
+                            <constraint firstItem="0ev-gM-Pbu" firstAttribute="centerX" secondItem="yhp-vE-MYn" secondAttribute="centerX" id="yqp-XY-JYv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="pJ4-8g-9He"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="0ev-gM-Pbu" id="lzc-YZ-h1P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJ7-TA-A9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
