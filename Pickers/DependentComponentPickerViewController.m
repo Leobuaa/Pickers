@@ -98,4 +98,13 @@
         [self.dependentPicker selectRow:0 inComponent:kZipComponent animated:YES];
     }
 }
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
+    CGFloat pickerWidth = pickerView.bounds.size.width;
+    if (component == kZipComponent) {
+        return pickerWidth / 3;
+    } else {
+        return 2 * pickerWidth / 3;
+    }
+}
 @end
